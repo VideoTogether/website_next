@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTogether</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        h1 span {
+            color: #4CAF50;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #999;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #333;
+            color: white;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #999;
+        }
+        
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+            }
+            .feature {
+                width: calc(33% - 50px);
+                margin-bottom: 0;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-top: 20px;
+            }
+            nav a {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+            main {
+                flex-direction: column;
+                text-align: center;
+            }
+            .buttons {
+                justify-content: center;
+            }
+            .logo-image {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">VideoTogether</div>
+            <nav>
+                <a href="#">Installation</a>
+                <a href="#">Guide</a>
+                <a href="#">Add to your website</a>
+                <a href="#">Q&A</a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1><span>VideoTogether</span><br>Watch videos<br>together</h1>
+                <p class="subtitle">Watch videos online with your family and friends, no matter the distance between you</p>
+                <div class="buttons">
+                    <a href="#" class="btn btn-primary">Installation</a>
+                    <a href="#" class="btn btn-secondary">Play local videos</a>
+                    <a href="#" class="btn btn-secondary">Add to your website</a>
+                </div>
+            </div>
+            <div class="logo-image">
+                <img src="/api/placeholder/200/200" alt="VideoTogether logo" style="border-radius: 10px; max-width: 100%; height: auto;">
+            </div>
+        </main>
+        <div class="features">
+            <div class="feature">
+                <h3>Use on any device</h3>
+                <p>Compatible with Windows PCs, Linux PCs, Android smartphones, tablets, and TVs, iPhone and iPad. Even supports Apple TV via AirPlay.</p>
+            </div>
+            <div class="feature">
+                <h3>Supports all online video platforms and local videos</h3>
+                <p>Compatible with YouTube, Netflix, Disney+, and all other online video platforms. Browser-based local video playback can also be synchronized.</p>
+            </div>
+            <div class="feature">
+                <h3>Add watch-together functionality to your website</h3>
+                <p>Integrate watch-together functionality into your video website with just one line of code.</p>
+            </div>
+        </div>
+        <footer>
+            <p>Give feedback: https://github.com/VideoTogether/VideoTogether/issues</p>
+            <p>Copyright © 2022-present VideoTogether</p>
+        </footer>
+    </div>
+</body>
+</html>
